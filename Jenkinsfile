@@ -11,16 +11,21 @@ pipeline {
                 sh 'dotnet build'
             }
         }
-        stage('Run Synchronization') {
+        stage('Sync DLLs') {
             steps {
-                sh 'python3 ../sync_repos.py'
+                sh 'python3 ../sync_repos.py CoreRepo'
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                sh 'dotnet test CoreRepoTest'
             }
         }
         stage('Push Changes') {
             steps {
                 sh '''
                 git add .
-                git commit -m "Sync updated DLLs"
+                git commit -m "Synced DLLs"
                 git push origin main
                 '''
             }
