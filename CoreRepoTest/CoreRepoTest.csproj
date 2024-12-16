@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<ItemGroup>
+    <Reference Include="Add">
+        <HintPath>C:\Users\nehya\OneDrive\Desktop\Launchpad\CoreRepo\Add.dll</HintPath>
+    </Reference>
+    <Reference Include="Subtract">
+        <HintPath>C:\Users\nehya\OneDrive\Desktop\Launchpad\CoreRepo\Subtract.dll</HintPath>
+    </Reference>
+    <Reference Include="Multiply">
+        <HintPath>C:\Users\nehya\OneDrive\Desktop\Launchpad\CoreRepo\Multiply.dll</HintPath>
+    </Reference>
+    <Reference Include="Divide">
+        <HintPath>C:\Users\nehya\OneDrive\Desktop\Launchpad\CoreRepo\Divide.dll</HintPath>
+    </Reference>
+</ItemGroup>
+
+</Project>
